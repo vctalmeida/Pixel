@@ -1,3 +1,4 @@
+
 .color {
     width: 75px;
     height: 75px;
@@ -6,4 +7,28 @@
 }
 #preto{
     background-color: black;
+}
+#rand1{
+    background-color: aqua;
+}
+#rand2{
+    background-color: greenyellow
+}
+#rand3{
+    background-color: purple
+}
+
+#pixel-board{
+    width: 250px;
+    display: inline-block;
+}
+
+.pixel{
+    padding: 0px;
+    margin: 0px;
+    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block;
 }
