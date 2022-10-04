@@ -20,3 +20,12 @@ let rand3 = document.getElementById('rand3')
 rand1.style.background = generateColor()
 rand2.style.background = generateColor()
 rand3.style.background = generateColor()
+
+// botão 
+let botaoR = document.getElementById('button-random-color')
+botaoR.addEventListener('click', randomizaCor)
+function randomizaCor(){
+    rand1.style.background = generateColor()
+    rand2.style.background = generateColor()
+    rand3.style.background = generateColor()
+}   
