@@ -1,0 +1,9 @@
+.color {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    display: inline-block;
+}
+#preto{
+    background-color: black;
+}
