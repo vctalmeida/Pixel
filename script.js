@@ -12,7 +12,6 @@ function generateColor() {
     
 }
 // botão 
-
 let rand1 = document.getElementById('rand1')
 let rand2 = document.getElementById('rand2')
 let rand3 = document.getElementById('rand3')
@@ -31,6 +30,13 @@ function randomizaCor(){
     rand3.style.background = cor3
 }
 
+// guarda cor
+let corSalva1 = localStorage.getItem('color1')
+let corSalva2 = localStorage.getItem('color2')
+let corSalva3 = localStorage.getItem('color3')
+    rand1.style.background = corSalva1
+    rand2.style.background = corSalva2
+    rand3.style.background = corSalva3
 // gera quadrado
 for (let index = 1; index <= 25; index += 1){
     let borda = document.getElementById('pixel-board')
