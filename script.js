@@ -40,9 +40,10 @@ let corSalva3 = localStorage.getItem('color3')
 // gera quadrado
 for (let index = 1; index <= 25; index += 1){
     let borda = document.getElementById('pixel-board')
-    let pixelCreate = document.createElement('p')
+    pixelCreate = document.createElement('p')
     pixelCreate.className = 'pixel'
     pixelCreate.style.backgroundColor = 'white'
+    pixelCreate.addEventListener('click', picasso)
     borda.appendChild(pixelCreate)
 }
 
@@ -82,4 +83,17 @@ function ColorPixel3(){
     rand3.classList.add('selected')
 }
 // pinta quadrados
-corSalva1 = ''
+function picasso (){
+    if (rand1.classList.contains('selected') === true) {
+        pixelCreate.style.backgroundColor = cor1
+    }
+    else if(rand2.classList.contains('selected') === true) {
+        pixelCreate.style.backgroundColor = cor2
+    }
+    else if(rand3.classList.contains('selected') === true) {
+        pixelCreate.style.backgroundColor = cor3
+    }
+    else {
+        pixelCreate.style.backgroundColor = 'black'
+    }
+}
