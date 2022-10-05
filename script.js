@@ -102,4 +102,3 @@ function picasso (event){
         event.target.style.backgroundColor = 'black'
     }
 }
-
