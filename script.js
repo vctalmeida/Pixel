@@ -15,6 +15,10 @@ function generateColor() {
 let rand1 = document.getElementById('rand1')
 let rand2 = document.getElementById('rand2')
 let rand3 = document.getElementById('rand3')
+let cor1 = 'aqua'
+let cor2 = 'greenyellow'
+let cor3 =  'purple'
+
 
 let botaoR = document.getElementById('button-random-color')
 botaoR.addEventListener('click', randomizaCor)
@@ -37,6 +41,7 @@ let corSalva3 = localStorage.getItem('color3')
     rand1.style.background = corSalva1
     rand2.style.background = corSalva2
     rand3.style.background = corSalva3
+
 // gera quadrado
 for (let index = 1; index <= 25; index += 1){
     let borda = document.getElementById('pixel-board')
@@ -83,17 +88,18 @@ function ColorPixel3(){
     rand3.classList.add('selected')
 }
 // pinta quadrados
-function picasso (){
+function picasso (event){
     if (rand1.classList.contains('selected') === true) {
-        pixelCreate.style.backgroundColor = cor1
+        event.target.style.backgroundColor = cor1
     }
     else if(rand2.classList.contains('selected') === true) {
-        pixelCreate.style.backgroundColor = cor2
+        event.target.style.backgroundColor = cor2
     }
     else if(rand3.classList.contains('selected') === true) {
-        pixelCreate.style.backgroundColor = cor3
+        event.target.style.backgroundColor = cor3
     }
     else {
-        pixelCreate.style.backgroundColor = 'black'
+        event.target.style.backgroundColor = 'black'
     }
 }
+
