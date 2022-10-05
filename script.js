@@ -22,7 +22,7 @@ function randomizaCor(){
     cor1 = generateColor()
     cor2 = generateColor()
     cor3 = generateColor()
-    localStorage.setItem('color1',cor1)
+    localStorage.setItem('colorPalette',cor1)
     localStorage.setItem('color2',cor2)
     localStorage.setItem('color3',cor3)
     rand1.style.background = cor1
@@ -31,7 +31,7 @@ function randomizaCor(){
 }
 
 // guarda cor
-let corSalva1 = localStorage.getItem('color1')
+let corSalva1 = localStorage.getItem('colorPalette')
 let corSalva2 = localStorage.getItem('color2')
 let corSalva3 = localStorage.getItem('color3')
     rand1.style.background = corSalva1
@@ -82,4 +82,4 @@ function ColorPixel3(){
     rand3.classList.add('selected')
 }
 // pinta quadrados
-
+corSalva1 = ''
