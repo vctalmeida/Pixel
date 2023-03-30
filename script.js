@@ -17,7 +17,7 @@ let rand2 = document.getElementById('rand2')
 let rand3 = document.getElementById('rand3')
 let cor1 = 'aqua'
 let cor2 = 'greenyellow'
-let cor3 =  'purple'
+let cor3 = 'purple'
 
 
 let botaoR = document.getElementById('button-random-color')
